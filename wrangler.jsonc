@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "quizzera-worker",
+  "main": "workers/cloudflare-worker.js",
+  "compatibility_date": "2025-07-26",
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "4ee5b9fec5de42628c217e71c78d9dae",
+      "preview_id": "11111111111111111111111111111111"
+    }
+  ]
+}

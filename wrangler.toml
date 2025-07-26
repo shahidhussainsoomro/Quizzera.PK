@@ -1,0 +1,14 @@
+name = "quizzera-pk-worker"
+main = "workers/cloudflare-worker.js"
+compatibility_date = "2025-07-26"
+
+[vars]
+# Optional environment variables
+
+[[kv_namespaces]]
+binding = "USER_ROLES"
+id = "your-kv-namespace-id-1"
+
+[[kv_namespaces]]
+binding = "QUIZBANK"
+id = "your-kv-namespace-id-2"
