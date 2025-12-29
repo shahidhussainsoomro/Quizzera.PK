@@ -1,0 +1,17 @@
+export { default as AdminDashboard } from "./AdminDashboard.jsx";
+export { default as AnalyticsPage } from "./AnalyticsPage.jsx";
+export { default as BillingPage } from "./BillingPage.jsx";
+export { default as ForgotPasswordPage } from "./ForgotPasswordPage.jsx";
+export { default as HomePage } from "./HomePage.jsx";
+export { default as ExamsPage } from "./ExamsPage.jsx";
+export { default as GovernancePage } from "./GovernancePage.jsx";
+export { default as McqsPage } from "./McqsPage.jsx";
+export { default as PrivacyPage } from "./PrivacyPage.jsx";
+export { default as RefundPage } from "./RefundPage.jsx";
+export { default as SignInPage } from "./SignInPage.jsx";
+export { default as SignOutPage } from "./SignOutPage.jsx";
+export { default as SignUpPage } from "./SignUpPage.jsx";
+export { default as StudentPage } from "./StudentPage.jsx";
+export { default as SystemPage } from "./SystemPage.jsx";
+export { default as TermsPage } from "./TermsPage.jsx";
+export { default as TeacherPage } from "./TeacherPage.jsx";
