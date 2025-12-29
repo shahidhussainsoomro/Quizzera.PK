@@ -108,9 +108,19 @@
   grid-column: span 2;
 }
 
+.dashboard__card--compact {
+  margin-top: 24px;
+}
+
 .form {
   display: grid;
   gap: 16px;
+}
+
+.form__title {
+  margin: 0;
+  font-size: 18px;
+  color: #0f172a;
 }
 
 .form__row {

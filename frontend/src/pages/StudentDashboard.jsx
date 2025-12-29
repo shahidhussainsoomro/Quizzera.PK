@@ -1,3 +1,5 @@
+import ProfileForm from "../components/ProfileForm.jsx";
+
 const studentHighlights = [
   { label: "Practice sessions", value: "4" },
   { label: "Upcoming exams", value: "2" },
@@ -16,6 +18,9 @@ export default function StudentDashboard() {
             <p className="pill-card__value">{item.value}</p>
           </article>
         ))}
+      </div>
+      <div className="dashboard__card dashboard__card--compact">
+        <ProfileForm title="Update Profile" />
       </div>
     </section>
   );

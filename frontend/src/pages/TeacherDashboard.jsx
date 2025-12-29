@@ -1,3 +1,5 @@
+import ProfileForm from "../components/ProfileForm.jsx";
+
 const teacherActions = [
   "Create assignments and exams",
   "Manage classes and groups",
@@ -14,6 +16,9 @@ export default function TeacherDashboard() {
           <li key={item}>{item}</li>
         ))}
       </ul>
+      <div className="dashboard__card dashboard__card--compact">
+        <ProfileForm title="Update Profile" />
+      </div>
     </section>
   );
 }
