@@ -1,0 +1,9 @@
+export { default as AdminDashboard } from "./AdminDashboard.jsx";
+export { default as AnalyticsPage } from "./AnalyticsPage.jsx";
+export { default as BillingPage } from "./BillingPage.jsx";
+export { default as ExamsPage } from "./ExamsPage.jsx";
+export { default as GovernancePage } from "./GovernancePage.jsx";
+export { default as McqsPage } from "./McqsPage.jsx";
+export { default as StudentPage } from "./StudentPage.jsx";
+export { default as SystemPage } from "./SystemPage.jsx";
+export { default as TeacherPage } from "./TeacherPage.jsx";

@@ -1,0 +1,18 @@
+const baseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
+
+export const apiClient = {
+  async post(path, payload) {
+    return fetch(`${baseUrl}${path}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+  },
+  async put(path, payload) {
+    return fetch(`${baseUrl}${path}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+  }
+};
