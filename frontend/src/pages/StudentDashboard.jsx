@@ -1,4 +1,6 @@
+import { useState } from "react";
 import ProfileForm from "../components/ProfileForm.jsx";
+import { apiClient } from "../services/api.js";
 
 const studentHighlights = [
   { label: "Practice sessions", value: "4" },
@@ -7,6 +9,22 @@ const studentHighlights = [
 ];
 
 export default function StudentDashboard() {
+  const [status, setStatus] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleProfileSubmit = async (payload) => {
+    setIsSubmitting(true);
+    setStatus("");
+    try {
+      await apiClient.put("/student/profile", payload);
+      setStatus("Profile updated successfully.");
+    } catch (error) {
+      setStatus("Unable to update profile. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="dashboard__section">
       <h2>Student Dashboard</h2>
@@ -20,7 +38,12 @@ export default function StudentDashboard() {
         ))}
       </div>
       <div className="dashboard__card dashboard__card--compact">
-        <ProfileForm title="Update Profile" />
+        <ProfileForm
+          title="Update Profile"
+          onSubmit={handleProfileSubmit}
+          status={status}
+          isSubmitting={isSubmitting}
+        />
       </div>
     </section>
   );

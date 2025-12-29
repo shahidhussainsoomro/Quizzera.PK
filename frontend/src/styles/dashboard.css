@@ -151,6 +151,12 @@
   justify-content: flex-end;
 }
 
+.form__status {
+  margin: 0;
+  font-size: 13px;
+  color: #2563eb;
+}
+
 .primary {
   background: #2563eb;
   color: white;
@@ -158,6 +164,11 @@
   padding: 10px 16px;
   border-radius: 999px;
   cursor: pointer;
+}
+
+.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .secondary {

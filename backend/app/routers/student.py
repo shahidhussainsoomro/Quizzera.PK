@@ -1,5 +1,7 @@
 from fastapi import APIRouter
 
+from app.schemas.profile import ProfileUpdate
+
 router = APIRouter(prefix="/student", tags=["student"])
 
 
@@ -21,3 +23,8 @@ def bookmark_question() -> dict:
 @router.get("/results")
 def results() -> dict:
     return {"message": "Results placeholder"}
+
+
+@router.put("/profile")
+def update_profile(payload: ProfileUpdate) -> dict:
+    return {"message": "Student profile updated", "profile": payload.model_dump()}

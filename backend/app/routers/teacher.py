@@ -1,5 +1,7 @@
 from fastapi import APIRouter
 
+from app.schemas.profile import ProfileUpdate
+
 router = APIRouter(prefix="/teacher", tags=["teacher"])
 
 
@@ -21,3 +23,8 @@ def create_teacher_exam() -> dict:
 @router.get("/analytics")
 def teacher_analytics() -> dict:
     return {"message": "Teacher analytics placeholder"}
+
+
+@router.put("/profile")
+def update_profile(payload: ProfileUpdate) -> dict:
+    return {"message": "Teacher profile updated", "profile": payload.model_dump()}

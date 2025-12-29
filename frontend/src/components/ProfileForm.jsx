@@ -1,6 +1,12 @@
-export default function ProfileForm({ title }) {
+export default function ProfileForm({ title, onSubmit, status, isSubmitting }) {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    onSubmit?.(Object.fromEntries(formData));
+  };
+
   return (
-    <form className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <h3 className="form__title">{title}</h3>
       <div className="form__row">
         <label className="form__label">
@@ -38,10 +44,11 @@ export default function ProfileForm({ title }) {
         <button className="secondary" type="button">
           Reset
         </button>
-        <button className="primary" type="submit">
-          Save Profile
+        <button className="primary" type="submit" disabled={isSubmitting}>
+          {isSubmitting ? "Saving..." : "Save Profile"}
         </button>
       </div>
+      {status ? <p className="form__status">{status}</p> : null}
     </form>
   );
 }
