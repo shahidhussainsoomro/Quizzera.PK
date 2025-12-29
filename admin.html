@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizzera.PK | Admin Panel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  
+<header class="bg-[#0A192F] text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Quizzera.PK</h1>
+    <nav>
+      <a href="/index.html" class="mx-2 hover:underline">Home</a>
+      <a href="/dashboard.html" class="mx-2 hover:underline">Dashboard</a>
+      <a href="/admin.html" class="ml-4 bg-[#64FFDA] text-black px-3 py-1 rounded">Admin Panel</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="p-8">
+    <section class="container mx-auto">
+      <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+        <p class="text-sm uppercase tracking-widest text-[#64FFDA] font-semibold">Platform Owner</p>
+        <h2 class="text-3xl font-bold mb-2">Admin Governance & Control</h2>
+        <p class="text-gray-600">Manage roles, institutions, and compliance from a centralized command center.</p>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-2">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-xl font-semibold mb-3">Core Governance</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Role-based access (Admin, Teacher, Student, Mentor, Institution).</li>
+            <li>• User onboarding, suspension, verification, audit logs.</li>
+            <li>• Multi-institution & multi-tenant management.</li>
+            <li>• License & subscription management.</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-xl font-semibold mb-3">MCQs & Exam Management</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Central MCQs repository (CRUD) with bulk import.</li>
+            <li>• Taxonomy: subject → topic → subtopic → difficulty.</li>
+            <li>• Exam creation engine and blueprint mapping.</li>
+            <li>• Time rules, negative marking, attempt limits.</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-xl font-semibold mb-3">Quality & Compliance</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Moderation workflow and explanation validation.</li>
+            <li>• Duplicate detection, versioning, syllabus tagging.</li>
+            <li>• Content ownership & IP protection.</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-xl font-semibold mb-3">Analytics & Intelligence</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Platform-wide performance analytics.</li>
+            <li>• Exam difficulty & discrimination index.</li>
+            <li>• Engagement heatmaps and pass/fail trends.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid gap-6 mt-6 lg:grid-cols-2">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-xl font-semibold mb-3">Finance & Monetization</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Pricing plans & coupon management.</li>
+            <li>• Payment gateway integration.</li>
+            <li>• Invoices, receipts, and revenue analytics.</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h3 class="text-xl font-semibold mb-3">System & Integrations</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• API & webhook management.</li>
+            <li>• Email / SMS / WhatsApp notifications.</li>
+            <li>• Backup, logs, and security monitoring.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid gap-6 mt-6 md:grid-cols-3">
+        <a href="/admin-users.html" class="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">User & Role Management</h3>
+          <p class="text-gray-600">Manage onboarding, verification, and role permissions.</p>
+        </a>
+        <a href="/admin-mcq.html" class="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">MCQ Repository</h3>
+          <p class="text-gray-600">Import, review, and organize MCQ banks.</p>
+        </a>
+        <a href="/admin-analytics.html" class="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition">
+          <h3 class="text-lg font-semibold mb-2">Analytics Hub</h3>
+          <p class="text-gray-600">Monitor performance trends and engagement.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  
+<footer class="bg-gray-800 text-white text-center py-4 mt-12">
+  &copy; 2025 Quizzera.PK | All Rights Reserved
+</footer>
+
+</body>
+</html>
