@@ -20,7 +20,129 @@
   </div>
 </header>
 
-  <main class="p-8"><h1 class='text-3xl font-bold mb-4'>Dashboard</h1><p>This is your personalized dashboard. Role-based content will load here.</p></main>
+  <main class="p-8">
+    <section class="container mx-auto">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-widest text-[#64FFDA] font-semibold">Control Center</p>
+          <h1 class="text-3xl font-bold mb-2">Role-based dashboards for every stakeholder</h1>
+          <p class="text-gray-600">Admin, teacher, mentor, and student workspaces built for Pakistan-focused exam preparation, analytics, and compliance.</p>
+        </div>
+        <div class="flex gap-3">
+          <button class="bg-[#64FFDA] text-black px-4 py-2 rounded font-semibold">Admin Panel</button>
+          <button class="border border-[#64FFDA] text-[#64FFDA] px-4 py-2 rounded font-semibold">Teacher/Mentor</button>
+          <button class="border border-[#64FFDA] text-[#64FFDA] px-4 py-2 rounded font-semibold">Student</button>
+        </div>
+      </div>
+
+      <div class="grid gap-6 mt-8 lg:grid-cols-3">
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h2 class="text-2xl font-semibold mb-4">Admin Panel</h2>
+          <div class="space-y-4 text-gray-600">
+            <div>
+              <h3 class="font-semibold text-gray-800">Core Governance & Control</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Role-based access (Admin, Teacher, Student, Mentor, Institution).</li>
+                <li>• User onboarding, suspension, verification, and audit logs.</li>
+                <li>• Multi-institution & multi-tenant management.</li>
+                <li>• License & subscription management (individual / institute / bulk).</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800">MCQs & Exam Management</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Central MCQs repository with bulk import (CSV/Excel/JSON).</li>
+                <li>• Taxonomy: subject → topic → subtopic → difficulty.</li>
+                <li>• Exam creation engine with blueprint mapping (FPSC, PPSC, NTS, HEC).</li>
+                <li>• Time rules, negative marking, and attempt limits.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800">Quality, Analytics & Finance</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Moderation workflow, duplicate detection, explanation validation.</li>
+                <li>• Platform analytics, difficulty index, engagement heatmaps.</li>
+                <li>• Pricing plans, payments, invoices, and revenue analytics.</li>
+                <li>• API/webhooks, notifications, backups, and security monitoring.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h2 class="text-2xl font-semibold mb-4">Teacher & Mentor Dashboard</h2>
+          <div class="space-y-4 text-gray-600">
+            <div>
+              <h3 class="font-semibold text-gray-800">Content Creation</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Create MCQs with explanations and syllabus tagging.</li>
+                <li>• Difficulty leveling and question reuse/cloning.</li>
+                <li>• Draft → Review → Publish workflow.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800">Exams & Assignments</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Build quizzes, tests, and assignments with deadlines.</li>
+                <li>• Assign exams to classes or groups with randomized sets.</li>
+                <li>• Timed tests today, adaptive tests coming soon.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800">Monitoring & Pedagogy</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Class-wise performance tracking and weak-area insights.</li>
+                <li>• Auto/manual feedback with remedial recommendations.</li>
+                <li>• Teaching portfolio, badges, and mentor credibility score.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <h2 class="text-2xl font-semibold mb-4">Student Dashboard</h2>
+          <div class="space-y-4 text-gray-600">
+            <div>
+              <h3 class="font-semibold text-gray-800">Learning & Practice</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Topic-wise practice, mock exams, and exam tracks.</li>
+                <li>• Bookmark, revise, and review previous attempts.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800">Smart Assessment</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Real exam simulation with timers and review flags.</li>
+                <li>• Instant or delayed results with detailed explanations.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800">Analytics & Personalization</h3>
+              <ul class="mt-2 space-y-2">
+                <li>• Score trends, strengths/weaknesses, accuracy vs speed.</li>
+                <li>• Goal-based plans, daily/weekly targets, reminders.</li>
+                <li>• Badges, certificates, mentor feedback access.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-sm p-6 mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Cross-role platform features</h2>
+        <div class="grid gap-4 md:grid-cols-2 text-gray-600">
+          <ul class="space-y-2">
+            <li>• Secure authentication (email / OTP).</li>
+            <li>• Web today; Android & iOS apps planned.</li>
+            <li>• Multilingual support (Urdu / English planned).</li>
+          </ul>
+          <ul class="space-y-2">
+            <li>• Dark mode & accessibility compliance.</li>
+            <li>• Data privacy and exam integrity safeguards.</li>
+            <li>• Mobile app sync control and notification center.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
   
 <footer class="bg-gray-800 text-white text-center py-4 mt-12">
   &copy; 2025 Quizzera.PK | All Rights Reserved
