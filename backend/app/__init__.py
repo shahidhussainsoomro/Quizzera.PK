@@ -1,0 +1,1 @@
+"""Quizzera FastAPI application package."""

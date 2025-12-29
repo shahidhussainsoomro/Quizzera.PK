@@ -1,0 +1,16 @@
+[project]
+name = "quizzera-backend"
+version = "0.1.0"
+description = "Quizzera FastAPI backend"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "sqlmodel>=0.0.16",
+  "psycopg[binary]>=3.1",
+  "alembic>=1.13",
+  "pydantic-settings>=2.2"
+]
+
+[tool.uvicorn]
+factory = false
